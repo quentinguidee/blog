@@ -65,7 +65,7 @@ export default class Episode1 extends Component {
                 <Text>
                     On a, entre autre, une batterie amovible au dessus, une
                     caméra à l'avant (qui sera réalisée très tard dans le
-                    projet), une LED de status au dessus avec un bouton on/off,
+                    projet), une LED de statut au dessus avec un bouton on/off,
                     des LEDs sous les moteurs…
                 </Text>
                 <Text>
