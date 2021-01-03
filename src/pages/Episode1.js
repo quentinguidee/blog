@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Article from "../components/articles/Article";
 import Background from "../components/articles/Background";
 import Definition from "../components/articles/Definition";
-import Header from "../components/articles/Header";
 import Image from "../components/articles/Image";
 import Subtitle from "../components/articles/Subtitle";
 import Text from "../components/articles/Text";
@@ -13,8 +12,7 @@ import DrawingImage from "../images/drawing.png";
 export default class Episode1 extends Component {
     render() {
         return (
-            <Article>
-                <Header>Création d'un drone de A à Z</Header>
+            <Article author="Quentin Guidée" date="03/01/2021">
                 <Title title="épisode 1" subtitle="Conception" />
                 <Background
                     image="https://unsplash.com/photos/4UGmm3WRUoQ/download?force=true"
