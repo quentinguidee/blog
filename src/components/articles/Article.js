@@ -9,7 +9,7 @@ export default class Article extends Component {
     render() {
         return (
             <div className="article">
-                <Header>Création d'un drone de A à Z</Header>
+                <Header>Création d'un quadcopter</Header>
                 {this.props.children}
                 <Author
                     author={this.props.author}

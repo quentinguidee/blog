@@ -1,0 +1,44 @@
+.cards
+    padding: 16px 24px
+
+.card
+    position: relative
+    background-color: #DDDDDD
+    display: inline-block
+    height: 100px
+    width: 300px
+    padding: 16px 24px
+    margin: 16px 24px
+    margin-top: 13px
+    cursor: pointer
+    border-bottom: 3px solid #DDDDDD
+    text-decoration: none
+
+    &:hover
+        background-color: #dadada
+        border-bottom: 3px solid gray
+        transition: all 0.2s
+
+    &__title
+        display: block
+        color: #386A8D
+        font-size: 16px
+        font-weight: 500
+
+    &__subtitle
+        display: block
+        color: #525252
+        font-size: 22px
+        font-weight: 500
+        margin-top: 4px
+
+    &__date
+        position: absolute
+        right: 24px
+        bottom: 16px
+        color: #818181
+        font-weight: 500
+
+@media screen and ( max-width: 900px )
+    .card
+        width: calc( 100vw - 96px - 48px )
