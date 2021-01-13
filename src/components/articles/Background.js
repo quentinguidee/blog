@@ -4,12 +4,9 @@ import "./sass/Background.sass";
 
 export default class Background extends Component {
     render() {
-        return (
-            <React.Fragment>
-                <div
-                    className="background"
-                    style={{ backgroundImage: `url(${this.props.image})` }}
-                ></div>
+        var credits;
+        if (!this.props.noCredits) {
+            credits = (
                 <div className="background__credits">
                     Image by {this.props.from} from{" "}
                     <a
@@ -22,6 +19,16 @@ export default class Background extends Component {
                     </a>
                     .
                 </div>
+            );
+        }
+
+        return (
+            <React.Fragment>
+                <div
+                    className="background"
+                    style={{ backgroundImage: `url(${this.props.image})` }}
+                ></div>
+                {credits}
             </React.Fragment>
         );
     }
