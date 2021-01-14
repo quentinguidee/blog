@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Gist from "react-gist";
+import { atomOneDark, CopyBlock, dracula } from "react-code-blocks";
 
 import "./sass/Code.sass";
 
@@ -7,7 +7,13 @@ export default class Code extends Component {
     render() {
         return (
             <div className="code">
-                <Gist id={this.props.id} file={this.props.file} />
+                <CopyBlock
+                    text={this.props.code}
+                    language={this.props.language}
+                    showLineNumbers={false}
+                    theme={dracula}
+                    wrapLines
+                />
             </div>
         );
     }

@@ -14,6 +14,25 @@ import ArduinoMega from "../images/arduino-mega.png";
 import ArduinoCover from "../images/arduino-cover.png";
 import ArduinoIDE from "../images/arduino-ide.png";
 import VSCode from "../images/vscode.png";
+import { atomOneDark, CopyBlock } from "react-code-blocks";
+
+let templateCode = `void setup() {
+    // Code lancé une fois au démarrage de l'Arduino
+}
+
+void loop() {
+  // Code exécuté en boucle
+}`;
+
+let makefileCode = `BOARD=arduino:avr:mega:cpu=atmega2560
+ARDUINO_CLI=arduino-cli
+PORT=/dev/ttyACM0
+
+all:
+  \${ARDUINO_CLI} -b \${BOARD} compile
+
+upload:
+  \${ARDUINO_CLI} -b \${BOARD} -p \${PORT} upload`;
 
 export default class Episode2 extends Component {
     render() {
@@ -119,11 +138,7 @@ export default class Episode2 extends Component {
                     Une Arduino se code en C++. La structure de base d'un
                     programme est la suivante :
                 </Text>
-                <Code
-                    gist
-                    id="fb71e14fc0d0f7802dd9b670e6c93c7d"
-                    file="main.cpp"
-                />
+                <Code code={templateCode} language="cpp" />
                 <Text>
                     Elle est simplement composée de deux fonctions très basiques
                     :
@@ -191,7 +206,7 @@ export default class Episode2 extends Component {
                     <Definition>make upload</Definition> l'enverra sur
                     l'Arduino.
                 </Text>
-                <Code id="fb71e14fc0d0f7802dd9b670e6c93c7d" file="Makefile" />
+                <Code code={makefileCode} language="makefile" />
                 <Text>
                     On a l'air bon maintenant, non ? On peut essayer de compiler
                     et d'upload, tout se passe merveilleusement bien !
