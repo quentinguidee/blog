@@ -14,7 +14,6 @@ import ArduinoMega from "../images/arduino-mega.png";
 import ArduinoCover from "../images/arduino-cover.png";
 import ArduinoIDE from "../images/arduino-ide.png";
 import VSCode from "../images/vscode.png";
-import { atomOneDark, CopyBlock } from "react-code-blocks";
 
 let templateCode = `void setup() {
     // Code lancé une fois au démarrage de l'Arduino

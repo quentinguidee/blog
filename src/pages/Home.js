@@ -22,6 +22,12 @@ export default class Home extends Component {
                         subtitle="L'Arduino"
                         date="13/01/2021"
                     />
+                    <Card
+                        to="/articles/create-drone-3"
+                        title="Episode 3"
+                        subtitle="LEDS et on/off"
+                        date="14/01/2021"
+                    />
                 </Cards>
             </div>
         );
