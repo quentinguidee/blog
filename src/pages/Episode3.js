@@ -77,7 +77,7 @@ export default class Episode2 extends Component {
                     booléenne (1/0) à chaque clic sur le bouton.
                 </Text>
                 <Text>
-                    Mais bon. C'est bien beau mais on ne sait pas voir ça
+                    Mais bon. C'est bien beau mais on ne sait pas voir si ça
                     marche... Pour cela, on va commencer les LEDs qui seront
                     placées sous les moteurs.
                 </Text>
