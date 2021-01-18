@@ -2,14 +2,12 @@ import React, { Component } from "react";
 
 import Article from "../components/articles/Article";
 import Background from "../components/articles/Background";
-import Definition from "../components/articles/Definition";
 import Image from "../components/articles/Image";
 import Subtitle from "../components/articles/Subtitle";
 import Text from "../components/articles/Text";
 import Title from "../components/articles/Title";
 import Code from "../components/articles/Code";
 
-import ArduinoCover from "../images/arduino-cover.png";
 import Button from "../images/button.png";
 import ButtonCircuitPhoto from "../images/button-circuit-photo.png";
 import LED from "../images/led-photo.png";
