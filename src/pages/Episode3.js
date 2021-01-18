@@ -23,7 +23,7 @@ import PiezoCircuit from "../images/piezo-circuit.png";
 import PiezoAudio from "../audio/piezo.mp3";
 import Audio from "../components/articles/Audio";
 
-export default class Episode2 extends Component {
+export default class Episode3 extends Component {
     render() {
         return (
             <Article author="Quentin Guidée" date="14/01/2021">
