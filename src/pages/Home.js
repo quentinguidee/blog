@@ -28,6 +28,12 @@ export default class Home extends Component {
                         subtitle="LEDS et on/off"
                         date="14/01/2021"
                     />
+                    <Card
+                        to="/articles/create-drone-4"
+                        title="Episode 4"
+                        subtitle="Accéléro et gyro"
+                        date="18/01/2021"
+                    />
                 </Cards>
             </div>
         );

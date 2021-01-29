@@ -8,6 +8,7 @@ import "./Reset.sass";
 import "./App.sass";
 import "./Fonts.sass";
 import Home from "./pages/Home";
+import Episode4 from "./pages/Episode4";
 
 function App() {
     return (
@@ -17,6 +18,7 @@ function App() {
                 <Route path="/articles/create-drone-1" component={Episode1} />
                 <Route path="/articles/create-drone-2" component={Episode2} />
                 <Route path="/articles/create-drone-3" component={Episode3} />
+                <Route path="/articles/create-drone-4" component={Episode4} />
                 <Route path="/" component={Error404} />
             </Switch>
         </HashRouter>
