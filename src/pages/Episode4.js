@@ -59,9 +59,10 @@ export default class Episode4 extends Component {
                     servir plus tard.
                 </Text>
                 <Image height="400" src={MPU} />
-                {/** PHOTO MPU 9250 */}
-                <Text>On peut le connecter assez simplement à l'Arduino :</Text>
-                {/** PHOTO MPU 9250 BRANCHE SUR ARDUINO */}
+                <Text>
+                    On peut le connecter assez simplement à l'Arduino grâce au
+                    connecteur I2C.
+                </Text>
                 <Text>
                     J'ai décidé d'installer la librairie{" "}
                     <Definition>MPU9250_asukiaaa</Definition> afin de
@@ -119,7 +120,7 @@ export default class Episode4 extends Component {
                     Le processus de calibration prendra donc 1 seconde à chaque
                     allumage du drone (car{" "}
                     <InlineMath>100\cdot 10ms</InlineMath>
-                    ). On peut surement diminuer le nombre d'échantillons pour
+                    ). On peut sûrement diminuer le nombre d'échantillons pour
                     diminuer ce temps, mais je préfère avoir la mesure la plus
                     fiable possible pour commencer, quitte à diminuer plus tard.
                 </Text>
@@ -151,7 +152,7 @@ export default class Episode4 extends Component {
                 <BlockMath>10deg + 1s\cdot 3 deg/s = 13 deg</BlockMath>
                 <Text>
                     On finit par deviner que, pour calculer l'angle du drone, il
-                    faudra rafraichir en boucle son angle avec quelque chose
+                    faudra rafraîchir en boucle son angle avec quelque chose
                     comme ça :
                 </Text>
                 <BlockMath>
@@ -193,7 +194,7 @@ export default class Episode4 extends Component {
                 </Text>
                 <Image height="220" src={DroneGravity} />
                 <Text>
-                    Vous voyez peut être où je veux en venir. Même si le drone
+                    Vous voyez peut-être où je veux en venir. Même si le drone
                     ne bouge pas, la composante d'accélération en Z prend en
                     compte la gravité !
                 </Text>
@@ -201,7 +202,7 @@ export default class Episode4 extends Component {
                 <Image height="250" src={DroneGravityTurn} />
                 <Text>
                     La gravité s'est répartie sur deux axes ! On peut donc
-                    utiliser ce phénomène pour connaitre notre inclinaison.
+                    utiliser ce phénomène pour connaître notre inclinaison.
                 </Text>
                 <Text>On va calculer les angles du drone comme ceci :</Text>
                 <BlockMath>
