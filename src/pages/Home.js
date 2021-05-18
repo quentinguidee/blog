@@ -32,7 +32,7 @@ export default class Home extends Component {
                         to="/articles/create-drone-4"
                         title="Episode 4"
                         subtitle="Accéléro et gyro"
-                        date="18/01/2021"
+                        date="18/05/2021"
                     />
                 </Cards>
             </div>

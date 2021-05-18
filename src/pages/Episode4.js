@@ -19,7 +19,7 @@ import { InlineMath, BlockMath } from "react-katex";
 export default class Episode4 extends Component {
     render() {
         return (
-            <Article author="Quentin Guidée" date="18/01/2021">
+            <Article author="Quentin Guidée" date="18/05/2021">
                 <Title
                     title="épisode 4"
                     subtitle="Accéléromètre et gyroscope"
